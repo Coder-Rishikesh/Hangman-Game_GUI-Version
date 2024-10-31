@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+        }
+        h2 {
+            font-size: 2em;
+            color: #2980b9;
+        }
+        h3 {
+            font-size: 1.5em;
+            color: #8e44ad;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hangman Game Project</h1>
+    <h3>Version: 1.0</h3>
+
+    <h2>Project Overview</h2>
+    <p>This Hangman game is a Java-based desktop application that implements the classic word-guessing game. The project consists of three main classes: <code>GameWindow</code>, <code>Menu</code>, and <code>Hangman</code>.</p>
+
+    <h2>Key Features:</h2>
+    <ul>
+        <li>Graphical User Interface (GUI) using Java Swing</li>
+        <li>Random word selection from a predefined list</li>
+        <li>Interactive keyboard for letter selection</li>
+        <li>Visual feedback for correct and incorrect guesses</li>
+        <li>Game restart option</li>
+    </ul>
+
+    <h2>Important Methods</h2>
+
+    <h3>1. <code>startGame()</code> in <code>GameWindow</code> class:</h3>
+    <p>Initializes the game by selecting a random word and setting up the GUI components.</p>
+
+    <h3>2. <code>actionPerformed()</code> in <code>GameWindow</code> class:</h3>
+    <p>Handles user input, updates the game state, and checks for win/lose conditions.</p>
+
+    <h3>3. <code>addComponent()</code> in <code>Menu</code> class:</h3>
+    <p>Sets up the main menu GUI with play, instructions, and exit options.</p>
+
+    <h2>Code Explanation</h2>
+    <p>The project is structured into three main classes:</p>
+
+    <h3>1. <code>GameWindow</code> class:</h3>
+    <ul>
+        <li>Extends <code>JFrame</code> and implements <code>ActionListener</code></li>
+        <li>Manages the main game logic and GUI</li>
+        <li>Handles letter guessing and word display</li>
+    </ul>
+
+    <h3>2. <code>Menu</code> class:</h3>
+    <ul>
+        <li>Extends <code>JFrame</code> and implements <code>ActionListener</code></li>
+        <li>Creates the initial menu interface</li>
+        <li>Provides options to start the game, view instructions, or exit</li>
+    </ul>
+
+    <h3>3. <code>Hangman</code> class:</h3>
+    <ul>
+        <li>Contains the main method to launch the application</li>
+        <li>Initializes the <code>Menu</code> class to start the program</li>
+    </ul>
+
+    <h2>Key Points</h2>
+    <ul>
+        <li>The game uses a predefined list of country names as words to guess</li>
+        <li>Random word selection ensures variety in gameplay</li>
+        <li>The GUI is built using Java Swing components for cross-platform compatibility</li>
+        <li>The project demonstrates the use of event handling in Java</li>
+        <li>Object-oriented principles are applied in the design of the classes</li>
+    </ul>
+
+    <p>This Hangman game project serves as an excellent example of how to create a simple yet engaging game using Java, showcasing GUI development, event handling, and basic game logic implementation.</p>
+
+</body>
+</html>
